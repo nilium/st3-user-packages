@@ -91,11 +91,11 @@
     "command": "clear_bookmarks"
   },
   {
-    "keys": ["super+.", "super+left"],
+    "keys": ["super+.", "super+,"],
     "command": "previous_bookmark"
   },
   {
-    "keys": ["super+.", "super+right"],
+    "keys": ["super+.", "super+/"],
     "command": "next_bookmark"
   },
 
@@ -107,7 +107,7 @@
 
   // Banner comment
   {
-    "keys": ["super+.", "super+/"],
+    "keys": ["super+.", "super+\\"],
     "command": "wrap_in_banner_comment"
   },
 
