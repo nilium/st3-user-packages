@@ -227,6 +227,32 @@
     }
   },
 
+  // Toggle gutter
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+g"],
+    "context": [
+      { "key": "setting.gutter", "operator": "equal", "operand": false }
+    ],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "gutter": true
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+g"],
+    "context": [
+      { "key": "setting.gutter", "operator": "equal", "operand": true }
+    ],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "gutter": false
+      }
+    }
+  },
+
   // Toggle status bar
   {
     "keys": ["super+,", "super+,", "super+k", "super+s"],
