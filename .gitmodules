@@ -81,3 +81,4 @@
 [submodule "WordCount"]
 	path = WordCount
 	url = git@github.com:SublimeText/WordCount.git
+	branch = st3
