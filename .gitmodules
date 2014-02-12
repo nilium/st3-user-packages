@@ -1,0 +1,83 @@
+[submodule "Abacus"]
+	path = Abacus
+	url = git@github.com:khiltd/Abacus.git
+	branch = master
+[submodule "BlitzMax"]
+	path = BlitzMax
+	url = git@github.com:nilium/blitzmax.tmbundle.git
+	branch = master
+[submodule "BufferScroll"]
+	path = BufferScroll
+	url = git@github.com:nilium/BufferScroll.git
+	branch = st3
+[submodule "EasyMotion"]
+	path = EasyMotion
+	url = git@github.com:tednaleid/sublime-EasyMotion.git
+	branch = st3
+[submodule "Emmet"]
+	path = Emmet
+	url = git@github.com:sergeche/emmet-sublime.git
+	branch = master
+[submodule "GitCommitMsg"]
+	path = GitCommitMsg
+	url = git@github.com:cbumgard/GitCommitMsg.git
+	branch = master
+[submodule "GitGutter"]
+	path = GitGutter
+	url = git@github.com:jisaacks/GitGutter.git
+	branch = master
+[submodule "NilKit"]
+	path = NilKit
+	url = git@github.com:nilium/subnil.git
+	branch = master
+[submodule "Origami"]
+	path = Origami
+	url = git@github.com:SublimeText/Origami.git
+	branch = master
+[submodule "Solarized"]
+	path = Solarized
+	url = git@github.com:SublimeColors/Solarized.git
+	branch = master
+[submodule "Text-Pastry"]
+	path = Text-Pastry
+	url = git@github.com:duydao/Text-Pastry.git
+	branch = master
+[submodule "Theme - FlatUI"]
+	path = Theme - FlatUI
+	url = git@github.com:nilium/flatui-theme.git
+	branch = master
+[submodule "Theme - Freesia"]
+	path = Theme - Freesia
+	url = git@github.com:nilium/st-theme-freesia.git
+	branch = master
+[submodule "Theme - Nil"]
+	path = Theme - Nil
+	url = git@github.com:nilium/st2-nil-theme.git
+	branch = master
+[submodule "Theme - Numix"]
+	path = Theme - Numix
+	url = git@github.com:alperenelhan/sublime-numix-theme.git
+	branch = master
+[submodule "hasher"]
+	path = hasher
+	url = git@github.com:dangelov/hasher.git
+	branch = master
+[submodule "sublime-better-coffeescript"]
+	path = sublime-better-coffeescript
+	url = git@github.com:aponxi/sublime-better-coffeescript.git
+	branch = master
+[submodule "sublime-c99"]
+	path = sublime-c99
+	url = git@github.com:noct/sublime-c99.git
+	branch = master
+[submodule "sublime-cpp11"]
+	path = sublime-cpp11
+	url = git@github.com:noct/sublime-cpp11.git
+	branch = master
+[submodule "sublime-jsdocs"]
+	path = sublime-jsdocs
+	url = git@github.com:spadgos/sublime-jsdocs.git
+	branch = master
+[submodule "WordCount"]
+	path = WordCount
+	url = git@github.com:SublimeText/WordCount.git

@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Big Duo</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#212326</string>
+				<key>caret</key>
+				<string>#ffffff</string>
+				<key>foreground</key>
+				<string>#d2cfc6</string>
+				<key>inactiveSelection</key>
+				<string>#e8b8ff7f</string>
+				<key>invisibles</key>
+				<string>#404040</string>
+				<key>lineHighlight</key>
+				<string>#42557c3f</string>
+				<key>selection</key>
+				<string>#ba44e76d</string>
+				<key>selectionBorder</key>
+				<string>#d081ee6d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Source</string>
+			<key>scope</key>
+			<string>source</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#74717e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Operator</string>
+			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3d8f9a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00d2e5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Control</string>
+			<key>scope</key>
+			<string>keyword.control</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dbcd5d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Control: Import</string>
+			<key>scope</key>
+			<string>keyword.control.import</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e160b4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ec7967</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function (definition)</string>
+			<key>scope</key>
+			<string>entity.name.function, keyword.other.name-of-parameter.objc</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#541f3d</string>
+				<key>foreground</key>
+				<string>#fb97d2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Class (definition)</string>
+			<key>scope</key>
+			<string>entity.name.type</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#541f3d</string>
+				<key>foreground</key>
+				<string>#fb97d2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Namespace (definition)</string>
+			<key>scope</key>
+			<string>entity.name.section.namespace</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#541f3d</string>
+				<key>foreground</key>
+				<string>#fb97d2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Inherited Class</string>
+			<key>scope</key>
+			<string>entity.other.inherited-class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#fb97d2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Java → Package</string>
+			<key>scope</key>
+			<string>meta.package, storage.modifier.package, keyword.other.package</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#00312f</string>
+				<key>foreground</key>
+				<string>#00f6ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>#if 0 … #endif</string>
+			<key>scope</key>
+			<string>meta.comment.block.preprocessor.c</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2d2d34</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Number</string>
+			<key>scope</key>
+			<string>constant.numeric</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#99cc66</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Quote</string>
+			<key>scope</key>
+			<string>punctuation.definition.string.begin, punctuation.definition.string.end</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff91c5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable.language, variable.other, variable.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#47aee8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant</string>
+			<key>scope</key>
+			<string>constant, markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#34a2d9</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant (other variable)</string>
+			<key>scope</key>
+			<string>variable.other.constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ed34e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constant (built-in)</string>
+			<key>scope</key>
+			<string>constant.language</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#47aee8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#314834a0</string>
+				<key>foreground</key>
+				<string>#bbe16c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Library function</string>
+			<key>scope</key>
+			<string>support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bb95ef</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Library type</string>
+			<key>scope</key>
+			<string>support.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6e9cbe</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Library constant</string>
+			<key>scope</key>
+			<string>support.constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#99cc33</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SGML Type</string>
+			<key>scope</key>
+			<string>meta.tag.sgml</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#00312f</string>
+				<key>foreground</key>
+				<string>#00f6ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup General</string>
+			<key>scope</key>
+			<string>meta.tag, markup.definition.note</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bd86fa</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup attribute</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#8aa6ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup tag</string>
+			<key>scope</key>
+			<string>declaration.tag, entity.name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffa686</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#cc0000</string>
+				<key>foreground</key>
+				<string>#ffffff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String interpolation</string>
+			<key>scope</key>
+			<string>constant.character.escaped, constant.character.escape, string source, string source.ruby</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#797be6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Git-Diff Background</string>
+			<key>scope</key>
+			<string>meta.diff.git-commit</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#22172b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Add</string>
+			<key>scope</key>
+			<string>markup.inserted</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#11401b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Remove</string>
+			<key>scope</key>
+			<string>markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#531c16</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Header</string>
+			<key>scope</key>
+			<string>meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#0b437a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Unchanged Line</string>
+			<key>scope</key>
+			<string>punctuation.definition.unchanged.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4e1c6b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter deleted</string>
+			<key>scope</key>
+			<string>markup.deleted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ec7967</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter inserted</string>
+			<key>scope</key>
+			<string>markup.inserted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bbe16c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter changed</string>
+			<key>scope</key>
+			<string>markup.changed.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dbcd5d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Literate CoffeeScript Block</string>
+			<key>scope</key>
+			<string>source.litcoffee markup.raw.block</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#3e314550</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 15</string>
+			<key>scope</key>
+			<string>meta.expr.loop14 punctuation.section.begin.expr.cowlips, meta.expr.loop14 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop15, punctuation.section.end.expr.loop15</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ea8a00</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 15</string>
+			<key>scope</key>
+			<string>meta.expr.loop15</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#75450020</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 14</string>
+			<key>scope</key>
+			<string>meta.expr.loop13 punctuation.section.begin.expr.cowlips, meta.expr.loop13 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop14, punctuation.section.end.expr.loop14</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffa345</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 14</string>
+			<key>scope</key>
+			<string>meta.expr.loop14</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7f512220</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 13</string>
+			<key>scope</key>
+			<string>meta.expr.loop12 punctuation.section.begin.expr.cowlips, meta.expr.loop12 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop13, punctuation.section.end.expr.loop13</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff7045</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 13</string>
+			<key>scope</key>
+			<string>meta.expr.loop13</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7f382220</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 12</string>
+			<key>scope</key>
+			<string>meta.expr.loop11 punctuation.section.begin.expr.cowlips, meta.expr.loop11 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop12, punctuation.section.end.expr.loop12</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff4f4f</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 12</string>
+			<key>scope</key>
+			<string>meta.expr.loop12</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7f272720</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 11</string>
+			<key>scope</key>
+			<string>meta.expr.loop10 punctuation.section.begin.expr.cowlips, meta.expr.loop10 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop11, punctuation.section.end.expr.loop11</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff7684</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 11</string>
+			<key>scope</key>
+			<string>meta.expr.loop11</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7f3b4220</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 10</string>
+			<key>scope</key>
+			<string>meta.expr.loop9 punctuation.section.begin.expr.cowlips, meta.expr.loop9 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop10, punctuation.section.end.expr.loop10</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff59a7</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 10</string>
+			<key>scope</key>
+			<string>meta.expr.loop10</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7f2c5320</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 9</string>
+			<key>scope</key>
+			<string>meta.expr.loop8 punctuation.section.begin.expr.cowlips, meta.expr.loop8 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop9, punctuation.section.end.expr.loop9</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff99fa</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 9</string>
+			<key>scope</key>
+			<string>meta.expr.loop9</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7f4c7d20</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 8</string>
+			<key>scope</key>
+			<string>meta.expr.loop7 punctuation.section.begin.expr.cowlips, meta.expr.loop7 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop8, punctuation.section.end.expr.loop8</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bc5fff</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 8</string>
+			<key>scope</key>
+			<string>meta.expr.loop8</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#5e2f7f20</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 7</string>
+			<key>scope</key>
+			<string>meta.expr.loop6 punctuation.section.begin.expr.cowlips, meta.expr.loop6 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop7, punctuation.section.end.expr.loop7</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#958aff</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 7</string>
+			<key>scope</key>
+			<string>meta.expr.loop7</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4a457f20</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 6</string>
+			<key>scope</key>
+			<string>meta.expr.loop5 punctuation.section.begin.expr.cowlips, meta.expr.loop5 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop6, punctuation.section.end.expr.loop6</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3782ff</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 6</string>
+			<key>scope</key>
+			<string>meta.expr.loop6</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#1b417f20</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 5</string>
+			<key>scope</key>
+			<string>meta.expr.loop4 punctuation.section.begin.expr.cowlips, meta.expr.loop4 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop5, punctuation.section.end.expr.loop5</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#60c8e1</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 5</string>
+			<key>scope</key>
+			<string>meta.expr.loop5</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#30647020</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 4</string>
+			<key>scope</key>
+			<string>meta.expr.loop3 punctuation.section.begin.expr.cowlips, meta.expr.loop3 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop4, punctuation.section.end.expr.loop4</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#17daaf</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 4</string>
+			<key>scope</key>
+			<string>meta.expr.loop4</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#b06d5720</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 3</string>
+			<key>scope</key>
+			<string>meta.expr.loop2 punctuation.section.begin.expr.cowlips, meta.expr.loop2 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop3, punctuation.section.end.expr.loop3</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5bce77</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 3</string>
+			<key>scope</key>
+			<string>meta.expr.loop3</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2d673b20</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 2</string>
+			<key>scope</key>
+			<string>meta.expr.loop1 punctuation.section.begin.expr.cowlips, meta.expr.loop1 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop2, punctuation.section.end.expr.loop2</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6dde48</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 2</string>
+			<key>scope</key>
+			<string>meta.expr.loop2</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#366f2420</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 1</string>
+			<key>scope</key>
+			<string>meta.expr.loop0 punctuation.section.begin.expr.cowlips, meta.expr.loop0 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop1, punctuation.section.end.expr.loop1</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9fe215</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 1</string>
+			<key>scope</key>
+			<string>meta.expr.loop1</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#4f71a020</string>
+			</dict>
+		</dict> -->
+		<dict>
+			<key>name</key>
+			<string>(…) Loop 0</string>
+			<key>scope</key>
+			<string>meta.expr.loop15 punctuation.section.begin.expr.cowlips, meta.expr.loop15 punctuation.section.end.expr.cowlips, punctuation.section.begin.expr.loop0, punctuation.section.end.expr.loop0</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e1e916</string>
+			</dict>
+		</dict>
+		<!-- <dict>
+			<key>name</key>
+			<string>Loop Back 0</string>
+			<key>scope</key>
+			<string>meta.expr.loop0</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#7074b020</string>
+			</dict>
+		</dict> -->
+	</array>
+	<key>uuid</key>
+	<string>C95E522B-72BF-4EF7-B2B1-F251020A8A58</string>
+</dict>
+</plist>

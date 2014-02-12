@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+/* $TM_FILENAME -- Noel Cower -- Public Domain */
+]]></content>
+  <tabTrigger>pdh</tabTrigger>
+  <scope>source.c, source.c++, source.objc source.objc++</scope>
+</snippet>

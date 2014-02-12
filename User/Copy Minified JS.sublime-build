@@ -1,0 +1,5 @@
+{
+  // "cmd": ["yuicompressor", "--preserve-semi", "--type js", "$file", "|", "pbcopy"]
+  "shell_cmd": "yuicompressor --verbose --nomunge --preserve-semi --type js '${file}' | pbcopy",
+  "shell": false
+}

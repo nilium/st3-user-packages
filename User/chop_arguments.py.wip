@@ -1,0 +1,107 @@
+import sublime, sublime_plugin
+
+from sublime import Region
+
+
+def update_regions(updated, point, delta, others):
+  for region in others:
+    if updated is region:
+      continue
+
+    if region.contains(point):
+      if region.a < region.b:
+        region.b += delta
+      else:
+        region.a += delta
+    elif region.start() >= point:
+      region.a += delta
+      region.b += delta
+
+
+class ChopArgumentsCommand(sublime_plugin.TextCommand):
+  def get_edges(self, region, heads, tails, escapes):
+    view = self.view
+    tail = None
+
+    depth = []
+    limit = view.size()
+
+    pt_back = region.begin() + 1
+    pt_front = region.end() - 1
+
+    while (pt_back > 0):
+      pt_back -= 1
+      char = view.substr(pt_back)
+      if char in heads:
+        tail = tails[heads.index(char)]
+        break
+
+    if tail is None:
+      return None
+
+    while pt_front < limit:
+      pt_front += 1
+      char = view.substr(pt_front)
+      if char in heads:
+        depth.append(heads.index(char))
+      elif len(depth) > 0 and char == escapes[depth[-1]]:
+        pt_front += 1
+      elif len(depth) > 0 and char == tails[depth[-1]]:
+        depth.pop()gVERS
+      elif char == tail:
+        return Region(pt_back + 1, pt_front)
+
+    return None
+
+
+  def separator_regions(self, region, separators, heads, tails, escapes):
+    pass
+
+  def chop(self, edit, selections, separators, heads, tails, escapes):
+    original_selections = list(Region(r.a, r.b) for r in selections)
+
+    regions = []
+
+    view = self.view
+
+    for sel in selections:
+      if sel.empty():
+        checked = self.get_edges(sel, heads, tails, escapes)
+        if checked is None:
+          continue
+        regions.append(checked)
+      else:
+        regions.append(sel)
+
+    for sel in sorted(regions, key = lambda _: _.end()):
+      selections.clear()
+      selections.add(Region(sel.end(), sel.end()))
+      inserted = view.insert(edit, sel.end(), "\n")
+      update_regions(sel, sel.end(), inserted, regions)
+      update_regions(sel, sel.end(), inserted, original_selections)
+      selections.clear()
+      inserted = view.insert(edit, sel.begin(), "\n")
+      update_regions(sel, sel.begin(), inserted, regions)
+      update_regions(sel, sel.begin(), inserted, original_selections)
+
+
+
+
+  def run(self, edit, groups = None, separators = None):
+    if groups is None:
+      groups = [
+        ('(', ')', None),
+        ('[', ']', None),
+        ('"', '"', '\\'),
+        ("'", "'", '\\'),
+        ("{", "}", None)
+      ]
+
+    if separators is None:
+      separators = [ ',' ]
+
+    heads = list(l for l, r, e in groups)
+    tails = list(r for l, r, e in groups)
+    escapes = list(e for l, r, e in groups)
+
+    self.chop(edit, self.view.sel(), separators, heads, tails, escapes)

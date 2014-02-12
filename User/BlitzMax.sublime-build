@@ -1,0 +1,8 @@
+{
+  "cmd": ["/Users/ncower/Applications/BlitzMax/bin/bmk", "makeapp",
+          "-o", "${project_base_name:$file_base_name}",
+          "-t", "gui",
+          "$file"],
+  "selector": "source.blitzmax",
+
+}

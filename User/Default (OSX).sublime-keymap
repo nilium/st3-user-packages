@@ -1,0 +1,281 @@
+[
+  // Paste keys
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" },
+
+  // Slightly modified switch_file to add cc and hh, if I remember right..
+  {
+    "keys": ["super+alt+up"],
+    "command": "switch_file",
+    "args": {
+      "extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm", "hh"]
+    }
+  },
+
+  // Grab with \b
+  { "command": "bounded_grab_next", "args": {"skip_last": false}, "keys": ["super+e"]},
+  { "command": "bounded_grab_next", "args": {"skip_last": true}, "keys": ["super+shift+e"]},
+
+  // Selection persistence
+  { "command": "store_selection", "args": {"restore": false}, "keys": ["super+k", "super+s"]},
+  { "command": "store_selection", "args": {"restore": true}, "keys": ["super+k", "super+r"]},
+
+  // Set mark
+  { "keys": ["super+k", "super+m"], "command": "set_mark" },
+
+  // Indentation levels
+  { "keys": ["super+k", "super+i", "super+1"], "command": "set_setting", "args": {"setting": "tab_size", "value": 1}},
+  { "keys": ["super+k", "super+i", "super+2"], "command": "set_setting", "args": {"setting": "tab_size", "value": 2}},
+  { "keys": ["super+k", "super+i", "super+3"], "command": "set_setting", "args": {"setting": "tab_size", "value": 3}},
+  { "keys": ["super+k", "super+i", "super+4"], "command": "set_setting", "args": {"setting": "tab_size", "value": 4}},
+  { "keys": ["super+k", "super+i", "super+5"], "command": "set_setting", "args": {"setting": "tab_size", "value": 5}},
+  { "keys": ["super+k", "super+i", "super+6"], "command": "set_setting", "args": {"setting": "tab_size", "value": 6}},
+  { "keys": ["super+k", "super+i", "super+7"], "command": "set_setting", "args": {"setting": "tab_size", "value": 7}},
+  { "keys": ["super+k", "super+i", "super+8"], "command": "set_setting", "args": {"setting": "tab_size", "value": 8}},
+
+  // Disable bare cmd+b (cmd+b should be two-stroke)
+  { "keys": ["super+b"], "command": "noop" },
+
+  // Build panel stuff
+  {
+    "keys": ["super+shift+b"],
+    "command": "hide_panel", "args": {"cancel": true},
+    "context": [
+      {"key": "panel", "operand": "output.exec", "operator": "equal" },
+      {"key": "panel_visible"}
+    ]
+  },
+  {
+    "keys": ["super+shift+b"],
+    "command": "show_panel",
+    "args": {"panel": "output.exec"},
+    "context": [
+      {"key": "panel", "operand": "output.exec", "operator": "not_equal"}
+    ]
+  },
+
+  // Build command forwarding for sbt
+  { "keys": ["super+b"], "command": "noop" },
+  { "keys": ["super+b", "super+b"], "command": "build", "args": {"variant": "Compile"} },
+  { "keys": ["super+b", "super+i"], "command": "build", "args": {"variant": "Install"} },
+  { "keys": ["super+b", "super+p"], "command": "build", "args": {"variant": "PackageDebug"} },
+  { "keys": ["super+b", "super+d"], "command": "build", "args": {"variant": "PackageRelease"} },
+  { "keys": ["super+b", "super+shift+c"], "command": "build", "args": {"variant": "Clean"} },
+  { "keys": ["super+b", "super+r"], "command": "build", "args": {"variant": "Reload"} },
+
+  // Insert line after caret
+  { "keys": ["shift+enter"], "command": "insert_snippet", "args": {"contents": "$0\n"} },
+
+  // Rebind find panels based on how often they're used and how weird the hand contortion is
+  { "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
+  { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+  // Text alignment
+  { // Left align
+    "keys": ["super+k", "super+a"],
+    "command": "indent_to_max_column"
+  },
+  { // Right align
+    "keys": ["super+k", "super+shift+a"],
+    "command": "indent_to_max_column",
+    "args": { "justify": "right" }
+  },
+
+  // Bookmarks
+  {
+    "keys": ["super+.", "super+."],
+    "command": "toggle_bookmark"
+  },
+  {
+    "keys": ["super+.", "super+shift+."],
+    "command": "clear_bookmarks"
+  },
+  {
+    "keys": ["super+.", "super+left"],
+    "command": "previous_bookmark"
+  },
+  {
+    "keys": ["super+.", "super+right"],
+    "command": "next_bookmark"
+  },
+
+  // Chop arguments (disabled until I finish writing the plugin later)
+  // {
+  //   "keys": ["super+.", "super+p"],
+  //   "command": "chop_arguments"
+  // },
+
+  // Banner comment
+  {
+    "keys": ["super+.", "super+/"],
+    "command": "wrap_in_banner_comment"
+  },
+
+  // Unset cmd+, so it can be used for N-stroke bindings
+  { "keys": ["super+,"], "command": "noop" },
+
+  // Move settings / keybindings access to F5 because function keys require reach
+  // and I don't see a reason to put something not commonly used on easily reached
+  // keys.
+  { "keys": ["super+f5"], "command": "open_file", "args": {"file": "${packages}/User/Preferences.sublime-settings"} },
+  { "keys": ["super+shift+f5"], "command": "open_file", "args": {"file": "${packages}/User/Default (OSX).sublime-keymap"} },
+
+  // Swap caret positions
+  { "keys": ["super+\\", "super+\\"], "command": "swap_selection_points", "args": { "mode": "swap" } },
+  { "keys": ["super+\\", "super+]"], "command": "swap_selection_points", "args": { "mode": "max" } },
+  { "keys": ["super+\\", "super+["], "command": "swap_selection_points", "args": { "mode": "min" } },
+
+  // Theme toggles
+  {
+    "keys": ["super+,", "super+,", "super+["],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "theme": "Freesia.sublime-theme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+]"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "theme": "Kano.sublime-theme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+'"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "theme": "Higuchi.sublime-theme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+;"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "theme": "Void.sublime-theme"
+      }
+    }
+  },
+
+  // Color scheme toggles
+  {
+    "keys": ["super+,", "super+,", "super+shift+["],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "color_scheme": "Packages/Theme - Freesia/Big Duo.tmTheme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+shift+]"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "color_scheme": "Packages/Theme - Freesia/Proxy.tmTheme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+shift+;"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "color_scheme": "Packages/Theme - Freesia/Kalopsia.tmTheme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+shift+'"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "color_scheme": "Packages/Theme - Freesia/Kalopsia Darker.tmTheme"
+      }
+    }
+  },
+
+  // Toggle line numbers
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+l"],
+    "context": [
+      { "key": "setting.line_numbers", "operator": "equal", "operand": false }
+    ],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "line_numbers": true
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+l"],
+    "context": [
+      { "key": "setting.line_numbers", "operator": "equal", "operand": true }
+    ],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "line_numbers": false
+      }
+    }
+  },
+
+  // Toggle status bar
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+s"],
+    "command": "toggle_status_bar"
+  },
+
+  // GitCommitMsg
+  {
+    "keys": ["super+,", "super+,", "super+l"],
+    "command": "git_commit_msg"
+  },
+
+  // Preview markdown/html file in Marked
+  {
+    "keys": ["super+,", "super+,", "super+p"],
+    "command": "exec_shell",
+    "context": [ { "key": "selector", "operator": "equal", "operand": "text.html" } ],
+    "args": { "cmd": ["open", "-a", "Marked", "${file}"] }
+  },
+
+  // Backticks wrappery
+  { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|>|$)", "match_all": true },
+      { "key": "preceding_text", "operator": "not_regex_contains", "operand": "[`a-zA-Z0-9_]$", "match_all": true },
+      { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true }
+    ]
+  },
+  { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}`"}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+    ]
+  },
+  { "keys": ["`"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "following_text", "operator": "regex_contains", "operand": "^`", "match_all": true }
+    ]
+  },
+  { "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"}, "context":
+    [
+      { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "preceding_text", "operator": "regex_contains", "operand": "`$", "match_all": true },
+      { "key": "following_text", "operator": "regex_contains", "operand": "^`", "match_all": true }
+    ]
+  },
+]

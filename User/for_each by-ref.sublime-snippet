@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+std::for_each(std::begin(${1:items}), std::end($1), [${2:&}](${3:item_t} &item) {
+    $0
+  });]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ear</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.c++, source.c++11</scope>
+</snippet>

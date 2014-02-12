@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+/*==============================================================================
+  ${1:FunctionName}
+
+    ${2:Description}
+==============================================================================*/
+]]></content>
+  <tabTrigger>fdoc</tabTrigger>
+  <scope>source.c, source.c++, source.objc, source.objc++</scope>
+</snippet>

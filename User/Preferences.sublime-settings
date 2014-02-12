@@ -1,0 +1,133 @@
+{
+	"align_indent": false,
+	"alignment_chars":
+	[
+		"=",
+		"\\"
+	],
+	"alignment_prefix_chars":
+	[
+		"+",
+		"-",
+		"&",
+		"|",
+		"<",
+		">",
+		"!",
+		"~",
+		"%",
+		"/",
+		"*",
+		"."
+	],
+	"alignment_space_chars":
+	[
+		"=",
+		":",
+		"\\"
+	],
+	"always_show_minimap_viewport": false,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_triggers":
+	[
+	],
+	"auto_complete_with_fields": false,
+	"banner_comment_outer_padding": 0,
+	"banner_comment_wall_padding": 1,
+	"banner_comment_width": 79,
+	"blitzmax_path": "/Users/ncower/Applications/BlitzMax",
+	"block_caret": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Theme - Freesia/Kalopsia Darker.tmTheme",
+	"colored_folder_glyphs": true,
+	"default_line_ending": "unix",
+	"detect_slow_plugins": true,
+	"disable_colored_folder_labels": false,
+	"disable_colored_group_labels": false,
+	"disable_tab_abbreviations": true,
+	"disable_tab_abbreviations_for_scopes": "string",
+	"draw_centered": false,
+	"draw_minimap_border": false,
+	"draw_white_space": "selection",
+	"enable_tab_scrolling": true,
+	"enable_telemetry": "disable",
+	"ensure_newline_at_eof_on_save": false,
+	"fade_fold_buttons": false,
+	"find_selected_text": false,
+	"flatui_folder_icons": true,
+	"flatui_thin_tabs": true,
+	"fold_buttons": false,
+	"font_face": "PragmataPro",
+	"font_options":
+	[
+	],
+	"font_size": 12,
+	"freesia_large_hscroll": false,
+	"freesia_large_tabs": false,
+	"freesia_small_tabs": false,
+	"freesia_small_vscroll": true,
+	"freesia_soft_tab_marker": true,
+	"full_name": "Noel Cower",
+	"gutter": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"EasyMotion",
+		"BufferScroll",
+		"SublimeClang",
+		"SublimeJava",
+		"Vintage",
+		"VintageEx",
+		"CoffeeScript",
+		"sublime-rust",
+		"ZenTabs",
+		"FuzzyFileNav",
+		"WordCount"
+	],
+	"indent_guide_options":
+	[
+		"draw_active",
+		"draw_normal"
+	],
+	"indent_to_bracket": false,
+	"itg_sidebar_tree_medium": true,
+	"itg_small_tabs": true,
+	"license_wrap": 72,
+	"line_numbers": true,
+	"line_padding_bottom": 1,
+	"line_padding_top": 2,
+	"manpage_sections":
+	[
+		"2",
+		"3",
+		"3G"
+	],
+	"manpage_use_apropos": true,
+	"margin": 4,
+	"numix_xsmall_tabs": true,
+	"open_tab_limit": 8,
+	"overlay_scroll_bars": "system",
+	"rulers":
+	[
+		72,
+		80,
+		100,
+		120
+	],
+	"scroll_past_end": true,
+	"scroll_speed": 0,
+	"show_full_path": true,
+	"show_panel_on_build": false,
+	"show_tab_close_buttons": true,
+	"sidebar_folders": true,
+	"tab_size": 2,
+	"theme": "Void.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"wide_caret": true,
+	"word_wrap": "false"
+}

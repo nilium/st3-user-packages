@@ -1,0 +1,39 @@
+[
+	{
+		"args":
+		{
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"by": "words",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"characters": "	"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"justify": "right"
+		},
+		"command": "indent_to_max_column"
+	}
+]

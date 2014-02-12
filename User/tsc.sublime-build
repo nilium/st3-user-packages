@@ -1,0 +1,5 @@
+{
+  "cmd": ["/usr/local/bin/tsc", "$file"],
+  "line_regex": ".*",
+  "selector": "source.ts"
+}

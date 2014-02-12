@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+/*
+  $TM_FILENAME -- Copyright (c) 2014 Noel Cower. All rights reserved.
+  See COPYING under the project root for the source code license. If this file
+  is not present, refer to <https://raw.github.com/nilium/snow/master/COPYING>.
+*/
+$0
+]]></content>
+  <tabTrigger>sdh</tabTrigger>
+  <scope>source.c, source.c++, source.objc, source.objc++</scope>
+</snippet>

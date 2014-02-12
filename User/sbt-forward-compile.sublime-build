@@ -1,0 +1,11 @@
+{
+  "cmd": ["echo", "A variant must be specified"],
+  "variants": [
+    { "name": "Compile", "cmd": ["fwd-sbt-cmd", "-c", "compile", "-l", "$project_path", "-n", "SBT-$project_name"] },
+    { "name": "Install", "cmd": ["fwd-sbt-cmd", "-c", "install", "-l", "$project_path", "-n", "SBT-$project_name"] },
+    { "name": "PackageDebug", "cmd": ["fwd-sbt-cmd", "-c", "android:package-debug", "-l", "$project_path", "-n", "SBT-$project_name"] },
+    { "name": "PackageRelease", "cmd": ["fwd-sbt-cmd", "-c", "android:package-release", "-l", "$project_path", "-n", "SBT-$project_name"] },
+    { "name": "Clean", "cmd": ["fwd-sbt-cmd", "-c", "clean", "-l", "$project_path", "-n", "SBT-$project_name"] },
+    { "name": "Reload", "cmd": ["fwd-sbt-cmd", "-c", "reload", "-l", "$project_path", "-n", "SBT-$project_name"] }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "caption": "Packages: Enable Package",
+    "command": "set_ignored_package",
+    "args": { "mode": "enable" }
+  },
+  {
+    "caption": "Packages: Ignore Package",
+    "command": "set_ignored_package",
+    "args": { "mode": "disable" }
+  }
+]
