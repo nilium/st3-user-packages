@@ -64,10 +64,11 @@
 	[
 	],
 	"font_size": 12,
+	"freesia_borderless": true,
 	"freesia_large_hscroll": false,
 	"freesia_large_tabs": false,
+	"freesia_medium_vscroll": true,
 	"freesia_small_tabs": false,
-	"freesia_small_vscroll": true,
 	"freesia_soft_tab_marker": true,
 	"full_name": "Noel Cower",
 	"gutter": true,
@@ -109,7 +110,7 @@
 	"margin": 4,
 	"numix_xsmall_tabs": true,
 	"open_tab_limit": 8,
-	"overlay_scroll_bars": "system",
+	"overlay_scroll_bars": "off",
 	"rulers":
 	[
 		72,
