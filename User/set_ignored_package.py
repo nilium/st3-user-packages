@@ -26,7 +26,7 @@ def ignored_packages():
 
 
 def ignore_package(package):
-  user_settings().set("ignored_packages", list(ignored_packages() + {package}))
+  user_settings().set("ignored_packages", list(ignored_packages() | {package}))
 
 
 def enable_package(package):
