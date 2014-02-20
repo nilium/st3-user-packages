@@ -273,6 +273,39 @@
     "args": { "cmd": ["open", "-a", "Marked", "${file}"] }
   },
 
+  // Groups
+  {
+    "keys": ["super+,", "super+g"],
+    "command": "new_pane"
+  },
+  {
+    "keys": ["super+,", "super+shift+g"],
+    "command": "new_pane",
+    "args": { "move": false }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+g"],
+    "command": "close_pane"
+  },
+  {
+    "keys": ["super+'"],
+    "command": "focus_neighboring_group"
+  },
+  {
+    "keys": ["super+;"],
+    "command": "focus_neighboring_group",
+    "args": { "forward": false }
+  },
+  {
+    "keys": ["super+shift+'"],
+    "command": "move_to_neighboring_group"
+  },
+  {
+    "keys": ["super+shift+;"],
+    "command": "move_to_neighboring_group",
+    "args": { "forward": false }
+  },
+
   // Backticks wrappery
   { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
     [
