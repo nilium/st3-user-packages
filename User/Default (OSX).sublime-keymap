@@ -253,6 +253,12 @@
     }
   },
 
+  // Toggle open files in sidebar
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+o"],
+    "command": "toggle_show_open_files"
+  },
+
   // Toggle status bar
   {
     "keys": ["super+,", "super+,", "super+k", "super+s"],
