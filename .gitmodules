@@ -82,3 +82,13 @@
 	path = WordCount
 	url = git@github.com:SublimeText/WordCount.git
 	branch = st3
+[submodule "GoSublime"]
+	path = GoSublime
+	url = git@github.com:DisposaBoy/GoSublime.git
+[submodule "sublime-lispindent"]
+	path = sublime-lispindent
+	url = git@github.com:odyssomay/sublime-lispindent.git
+[submodule "ExportHtml"]
+	path = ExportHtml
+	url = git@github.com:facelessuser/ExportHtml.git
+	branch = ST3

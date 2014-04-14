@@ -66,6 +66,10 @@
   // Insert line after caret
   { "keys": ["shift+enter"], "command": "insert_snippet", "args": {"contents": "$0\n"} },
 
+  // Captured snippets
+  { "keys": ["alt+enter"], "command": "insert_snippet", "args": {"name": "Packages/User/captured-snippet.sublime-snippet"} },
+  { "keys": ["alt+shift+enter"], "command": "capture_snippet", "args": {"name": "User/captured-snippet.sublime-snippet"} },
+
   // Rebind find panels based on how often they're used and how weird the hand contortion is
   { "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
   { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
@@ -165,11 +169,11 @@
 
   // Color scheme toggles
   {
-    "keys": ["super+,", "super+,", "super+shift+["],
+    "keys": ["super+,", "super+,", "super+shift+\\"],
     "command": "change_settings_in_file",
     "args": {
       "settings": {
-        "color_scheme": "Packages/Theme - Freesia/Big Duo.tmTheme"
+        "color_scheme": "Packages/Theme - Nil/Sanakan.tmTheme"
       }
     }
   },
@@ -178,7 +182,16 @@
     "command": "change_settings_in_file",
     "args": {
       "settings": {
-        "color_scheme": "Packages/Theme - Freesia/Proxy.tmTheme"
+        "color_scheme": "Packages/Theme - Freesia/Triplet Lite.tmTheme"
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+shift+["],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "color_scheme": "Packages/Theme - Freesia/Triplet.tmTheme"
       }
     }
   },
@@ -253,6 +266,13 @@
     }
   },
 
+  // Toggle wordwrap
+  {
+    "keys": ["super+,", "super+,", "super+k", "super+j"],
+    "command": "toggle_setting",
+    "args": { "setting": "word_wrap" }
+  },
+
   // Toggle open files in sidebar
   {
     "keys": ["super+,", "super+,", "super+k", "super+o"],
@@ -277,6 +297,27 @@
     "command": "exec_shell",
     "context": [ { "key": "selector", "operator": "equal", "operand": "text.html" } ],
     "args": { "cmd": ["open", "-a", "Marked", "${file}"] }
+  },
+  {
+    "keys": ["super+enter"],
+    "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        {
+          "command": "find_under_expand",
+          "context": "window"
+        },
+        {
+          "command": "insert_snippet",
+          "args": { "contents": "func${1/^(.+)$/(?1: )/}${1:$TM_SELECTED_TEXT}($2)${3/^(.+)$/(?1: )/}$3 {\n\t$0\n}" },
+          "context": "text"
+        }
+      ]
+    },
+
+    "context": [
+      { "key": "selector", "operator": "equal", "operand": "source.go", "match_all": true }
+    ]
   },
 
   // Groups
