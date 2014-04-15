@@ -42,8 +42,12 @@ class CaptureSnippetCommand(sublime_plugin.WindowCommand):
 
     selections = []
     for region in sel:
+      if region.empty(): continue
       min_indent = line_indent(view.substr(view.line(region.begin())))
       selections.append(unindent(view.substr(region), min_indent))
+
+    if len(selections) == 0:
+      return
 
     snippet = '\n'.join(selections)
 
