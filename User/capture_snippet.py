@@ -1,3 +1,4 @@
+# public domain, use as you see fit.
 import sublime, sublime_plugin
 
 def line_indent(line):
