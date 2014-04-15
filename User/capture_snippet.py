@@ -34,7 +34,7 @@ def unindent(lines, first_column = None):
 class CaptureSnippetCommand(sublime_plugin.WindowCommand):
   def run(self, name = None):
     if name is None:
-      name = 'captured-snippet.sublime-snippet'
+      name = 'User/captured-snippet.sublime-snippet'
 
     snippet_path = sublime.packages_path() + '/' + name
 
