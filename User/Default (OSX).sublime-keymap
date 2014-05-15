@@ -248,6 +248,32 @@
     }
   },
 
+  // Toggle indent to bracket
+  {
+    "keys": ["super+,", "super+,", "super+i"],
+    "context": [
+      { "key": "setting.indent_to_bracket", "operator": "equal", "operand": false }
+    ],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "indent_to_bracket": true
+      }
+    }
+  },
+  {
+    "keys": ["super+,", "super+,", "super+i"],
+    "context": [
+      { "key": "setting.indent_to_bracket", "operator": "equal", "operand": true }
+    ],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "indent_to_bracket": false
+      }
+    }
+  },
+
   // Toggle gutter
   {
     "keys": ["super+,", "super+,", "super+k", "super+g"],
