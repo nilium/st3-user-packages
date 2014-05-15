@@ -16,6 +16,14 @@
   { "command": "bounded_grab_next", "args": {"skip_last": false}, "keys": ["super+e"]},
   { "command": "bounded_grab_next", "args": {"skip_last": true}, "keys": ["super+shift+e"]},
 
+  // Invoke Emmet
+  {
+    "keys": ["super+k", "super+e"],
+    "command": "run_emmet_action",
+    "args": {"action": "expand_abbreviation"},
+    "context": [{"key": "emmet_action_enabled.expand_abbreviation"}]
+  },
+
   // Selection persistence
   { "command": "store_selection", "args": {"restore": false}, "keys": ["super+k", "super+s"]},
   { "command": "store_selection", "args": {"restore": true}, "keys": ["super+k", "super+r"]},
