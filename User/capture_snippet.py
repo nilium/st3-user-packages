@@ -19,6 +19,7 @@ def unindent(lines, first_column = None):
   if len(lines) == 1:
     return ''.join(s.lstrip() for s in lines)
 
+  lines[0] = lines[0].lstrip()
   indentation_levels = list(line_indent(l) for l in lines[1:] if l != '\n')
   if first_column is not None:
     indentation_levels.append(first_column)
