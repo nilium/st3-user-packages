@@ -157,6 +157,15 @@
     }
   },
   {
+    "keys": ["super+,", "super+,", "super+control+]"],
+    "command": "change_settings_in_file",
+    "args": {
+      "settings": {
+        "theme": "Shindo.sublime-theme"
+      }
+    }
+  },
+  {
     "keys": ["super+,", "super+,", "super+'"],
     "command": "change_settings_in_file",
     "args": {
